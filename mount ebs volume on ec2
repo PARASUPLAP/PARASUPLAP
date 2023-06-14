@@ -1,0 +1,19 @@
+create a instance EBS_mount then go to volume & attach instance
+connect instance by ssh
+log in as root user
+command lsblk to view device
+mount directory by (mkdir /tmp/image)
+make partition (fdisk /dev/xvdf)
+tyoe n for new partition
+type p for new partition enter 2 times
+w : write table and exit
+now enter "partprob" command to inform the kernal about the partion changes.
+to verify lsblk -fs
+mount /dev/xvdf1 /tmp/image
+lsblk -fs
+make mount point by vim /etc/fastab
+enter /dev/xvdf1 /temp/images xfs default and save
+df -h
+mount -a check bylsblk -fs
+partition mounted
+
